@@ -11,7 +11,7 @@ var execSync = require("child_process").execSync;
 var npmVersion = execSync("npm --version").toString();
 
 try {
-  var range = nul;
+  var range = null;
   if (semver.valid(targetVersion)) {
     range = "^" + targetVersion;
   } else {
