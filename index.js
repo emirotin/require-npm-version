@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var semver = require("semver");
 
-var targetVersion = process.argv[1];
+var targetVersion = process.argv[2];
 if (!targetVersion) {
   console.error("You need to specify a valid target version or semver range");
   process.exit(1);
